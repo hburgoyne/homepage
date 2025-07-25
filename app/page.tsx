@@ -43,8 +43,8 @@ export default function Home() {
       <main className="pt-20">
         {/* Hero Section */}
         <section className="py-16 px-6 text-center border-b border-gray-100">
-          <h1 className="text-3xl md:text-5xl font-bold text-[#065f46] max-w-5xl mx-auto">
-            <i>Mission:</i> Mining Asteroids and Ensuring Artificial Super-Intelligence Ultimately Serves Folks Like Us
+          <h1 className="text-2xl md:text-4xl font-bold text-[#065f46] max-w-5xl mx-auto">
+            <i>Mission:</i> Mining Asteroids and Ensuring Artificial Super-Intelligence Understands the Needs of Folks Like Us
           </h1>
         </section>
 

@@ -1,5 +1,11 @@
 [
     {
+        "title": "Sutter Telescopes",
+        "description": "TransAstra video for DARPA discussing our Sutter telescopes used for finding asteroids and monitoring spacecraft transiting to the Moon.",
+        "url": "https://www.linkedin.com/posts/trans-astronautica-corporation_our-sutter-telescope-systems-are-unmatched-activity-7312564874423713793-cSdr/",
+        "thumbnail_url": "/thumbnails/sutter.png"
+    },
+    {
         "title": "The Science of Sonic",
         "description": "Promotional short I wrote and \"starred\" in for Paramount and Nickelodeon on the \"Science of Sonic the Hedgehog\". My segment is right after Idris Elba's interview...",
         "url": "https://youtu.be/dhVBuOhmNVc?t=352"
@@ -10,8 +16,14 @@
         "url": "https://www.youtube.com/watch?v=jKI5dalRpn0"
     },
     {
-        "title": "Sutter Telescopes",
-        "description": "TransAstra video for DARPA discussing our Sutter telescopes used for finding asteroids and monitoring spacecraft transiting to the Moon.",
-        "url": "https://www.linkedin.com/posts/trans-astronautica-corporation_our-sutter-telescope-systems-are-unmatched-activity-7312564874423713793-cSdr/"
+        "title": "Bloomberg Article on Numerai",
+        "description": "Article for Bloomberg in which I was interviewed about my participation in Numerai.",
+        "url": "https://www.bloomberg.com/news/articles/2021-10-06/crowdsourced-quant-backed-by-tudor-jones-rides-the-crypto-wave"
+    },
+    {
+        "title": "Business Insider Article about me",
+        "description": "Article for Business Insider in which they focused on me drawing from the Forbes article. Story was also picked up by ZeroHedge who tweeted about me.",
+        "url": "https://markets.businessinsider.com/news/currencies/stock-picking-cryptocurrency-numerai-numeraire-nasa-engineer-richard-craib-2021-10",
+        "thumbnail_url": "/thumbnails/jupiter.png"
     }
 ]
