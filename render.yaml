@@ -2,6 +2,7 @@ services:
   - type: web
     name: haydenburgoyne-homepage
     runtime: node
+    plan: free
     branch: deploy
     buildCommand: npm install && npm run build
     startCommand: npm start
