@@ -1,5 +1,11 @@
 [
     {
+        "title": "Us Folks Demo-1",
+        "description": "Demo of AI representation of political views. Created during the 5050 program and Menlo Labs Fellowship. One step (of many) on the way to aligning ASI with our shared vision of the future.",
+        "url": "https://demo.usfolks.ai",
+        "thumbnail_url": "/thumbnails/usfolks.png"
+    },
+    {
         "title": "Sutter Telescopes",
         "description": "TransAstra video for DARPA discussing our Sutter telescopes used for finding asteroids and monitoring spacecraft transiting to the Moon.",
         "url": "https://www.linkedin.com/posts/trans-astronautica-corporation_our-sutter-telescope-systems-are-unmatched-activity-7312564874423713793-cSdr/",
