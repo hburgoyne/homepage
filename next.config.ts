@@ -19,6 +19,19 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  redirects: async () => [
+    {
+      source: '/(.*)',
+      has: [
+        {
+          type: 'host',
+          value: 'www.haydenburgoyne.com',
+        },
+      ],
+      destination: 'https://haydenburgoyne.com/:1',
+      permanent: true,
+    },
+  ],
 };
 
 export default nextConfig;

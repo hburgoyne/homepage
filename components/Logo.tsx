@@ -5,7 +5,7 @@ export default function Logo({ className = "" }: { className?: string }) {
     <Image
       src="/logo.png"
       alt="Hayden Burgoyne Logo"
-      width={40}
+      width={60}
       height={60}
       className={className}
     />
