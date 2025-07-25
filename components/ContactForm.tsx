@@ -23,9 +23,15 @@ export default function ContactForm() {
     setIsSubmitting(true)
 
     try {
+      // Include the current URL as the source
+      const submissionData = {
+        ...formData,
+        source: window.location.href
+      }
+
       const { error } = await supabase
         .from('public_contact')
-        .insert([formData])
+        .insert([submissionData])
 
       if (error) throw error
 
