@@ -43,7 +43,7 @@ export default function MediaGrid() {
     }
     
     // Fallback to logo
-    return '/logo-fallback.svg'
+    return '/logo.png'
   }
 
   if (loading) {
@@ -60,15 +60,16 @@ export default function MediaGrid() {
           rel="noopener noreferrer"
           className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
         >
-          <div className="aspect-video relative bg-gray-100">
+          <div className="aspect-video relative bg-white">
             <Image
               src={getThumbnail(item)}
               alt={item.title}
               fill
-              className="object-cover"
+              className={getThumbnail(item) === '/logo.png' ? 'object-contain scale-[0.6]' : 'object-cover'}
               onError={(e) => {
                 const target = e.target as HTMLImageElement
-                target.src = '/logo-fallback.svg'
+                target.src = '/logo.png'
+                target.className = target.className.replace('object-cover', 'object-contain scale-[0.6]')
               }}
             />
           </div>

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Hayden Burgoyne",
   description: "Asteroid mining and ensuring artificial super-intelligence serves us folks",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/favicon.png",
   },
 };
 

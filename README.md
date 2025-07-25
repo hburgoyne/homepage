@@ -1,6 +1,11 @@
 # Hayden Burgoyne Personal Homepage
 
-A minimalist personal homepage built with Next.js, Tailwind CSS, and Supabase.
+A minimalist personal homepage built using Claude Opus 4with Next.js, Tailwind CSS, and Supabase.
+
+## Claude
+
+Essentially all of this site was written by Claude Opus 4. I've included the prompt I used and the conversation I had with Claude in the Windsurf chat in the prompt.md file.
+
 
 ## Features
 
