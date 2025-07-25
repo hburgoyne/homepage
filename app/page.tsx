@@ -32,7 +32,7 @@ export default function Home() {
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
               <Logo />
-              <span className="text-xl font-semibold text-gray-900">Hayden Burgoyne</span>
+              <span className="text-xl font-bold text-[#065f46]">Hayden Burgoyne</span>
             </div>
             <Navigation />
           </div>
@@ -44,7 +44,7 @@ export default function Home() {
         {/* Hero Section */}
         <section className="py-16 px-6 text-center border-b border-gray-100">
           <h1 className="text-3xl md:text-5xl font-bold text-[#065f46] max-w-5xl mx-auto">
-            Asteroid Mining and Ensuring Artificial Super-Intelligence Ultimately Serves Us Folks
+            <i>Mission:</i> Mining Asteroids and Ensuring Artificial Super-Intelligence Ultimately Serves Folks Like Us
           </h1>
         </section>
 
@@ -118,7 +118,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-400">
-              2025 Hayden Burgoyne. All rights reserved.
+              2025 Hayden Burgoyne. All rights reserved. <br /> This page was built (almost) entirely by Claude.
             </p>
             <div className="flex items-center space-x-6">
               <a
