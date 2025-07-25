@@ -51,14 +51,14 @@ export default function MediaGrid() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
       {mediaItems.map((item, index) => (
         <a
           key={index}
           href={item.url}
           target="_blank"
           rel="noopener noreferrer"
-          className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
+          className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden w-full max-w-[372px]"
         >
           <div className="aspect-video relative bg-white">
             <Image

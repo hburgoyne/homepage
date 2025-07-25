@@ -4,7 +4,7 @@ A minimalist personal homepage built using Claude Opus 4with Next.js, Tailwind C
 
 ## Claude
 
-Essentially all of this site was written by Claude Opus 4. I've included the prompt I used and the conversation I had with Claude in the Windsurf chat in the prompt.md file.
+Essentially all of this site was written by Claude Opus 4. I've included the prompt I used and the conversation I had with Claude in the Windsurf chat in the prompt.md file. It cost about $7 to generate the site using Opus, and another $2 of updates using Sonnet.
 
 
 ## Features
