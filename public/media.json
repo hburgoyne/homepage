@@ -1,9 +1,9 @@
 [
     {
-        "title": "Us Folks Demo-1",
-        "description": "Demo of AI representation of political views. Created during the 5050 program and Menlo Labs Fellowship. One step (of many) on the way to aligning ASI with our shared vision of the future.",
-        "url": "https://demo.usfolks.ai",
-        "thumbnail_url": "/thumbnails/usfolks.png"
+        "title": "Us Folks MVP",
+        "description": "Demo showing off what I'm currently building, the \"Perplexity of Polling.\" One step (of many) on the way to aligning ASI with our shared vision of the future.",
+        "url": "https://mvp.usfolks.ai",
+        "thumbnail_url": "/thumbnails/usfolks_logo.png"
     },
     {
         "title": "Sutter Telescopes",
