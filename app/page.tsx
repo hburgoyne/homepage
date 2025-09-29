@@ -42,14 +42,14 @@ export default function Home() {
       {/* Main Content */}
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="py-16 px-6 text-center border-b border-gray-100">
+        <section className="py-8 px-6 text-center border-b border-gray-100">
           <h1 className="text-2xl md:text-4xl font-bold text-[#065f46] max-w-5xl mx-auto">
             <i>Mission:</i> Mining Asteroids and Ensuring Artificial Super-Intelligence Understands the Needs of Folks Like Us
           </h1>
         </section>
 
         {/* CV Section */}
-        <section id="cv" className="py-16 px-4 sm:px-6 lg:px-8">
+        <section id="cv" className="pt-2 pb-4 px-4 sm:px-6 lg:px-8">
           <div className="container mx-auto">
             {/* Mobile Card View */}
             <div className="block sm:hidden max-w-sm mx-auto">
@@ -79,16 +79,16 @@ export default function Home() {
             
             {/* Desktop Iframe View */}
             <div className="hidden sm:block max-w-5xl mx-auto bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="relative h-[600px] md:h-[600px] overflow-hidden">
+              <div className="relative h-[800px] md:h-[800px] overflow-hidden">
                 <div className="absolute inset-0 overflow-auto touch-pan-y">
                   <iframe 
                     src="https://hburgoyne.notion.site/ebd/23a126960bbf8064aee5dc25bf924c5b" 
                     width="100%" 
-                    height="600" 
+                    height="800" 
                     frameBorder="0" 
                     allowFullScreen
                     className="pointer-events-auto"
-                    style={{ minHeight: '600px' }}
+                    style={{ minHeight: '800px' }}
                   />
                 </div>
               </div>
