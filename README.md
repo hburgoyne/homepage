@@ -1,6 +1,6 @@
 # Hayden Burgoyne Personal Homepage
 
-A minimalist personal homepage built using Claude Opus 4with Next.js, Tailwind CSS, and Supabase.
+A minimalist personal homepage built with Claude, Next.js, and Tailwind CSS.
 
 ## Claude
 
@@ -12,14 +12,14 @@ Essentially all of this site was written by Claude Opus 4. I've included the pro
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
 - **Background**: Native experience timeline, highlight stats, and education (`components/Background.tsx`)
 - **Media Gallery**: Dynamic grid displaying media appearances and publications
-- **Contact Form**: Integrated with Supabase for message submissions
+- **Contact Form**: Emails submissions to my inbox via [Web3Forms](https://web3forms.com) (free tier, no backend)
 - **Minimalist Theme**: Clean white design with subtle green accents (#065f46)
 
 ## Tech Stack
 
 - **Framework**: Next.js 15.4.4 with App Router
 - **Styling**: Tailwind CSS
-- **Database**: Supabase
+- **Contact form delivery**: Web3Forms
 - **Icons**: Lucide React
 - **Notifications**: React Hot Toast
 - **Deployment**: Render
@@ -47,8 +47,7 @@ npm install
 3. Set up environment variables:
 Create a `.env` file in the root directory with:
 ```env
-NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
-NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+NEXT_PUBLIC_WEB3FORMS_KEY=your_web3forms_access_key
 ```
 
 4. Run the development server:
@@ -78,11 +77,9 @@ homepage/
 ├── components/
 │   ├── Logo.tsx         # HB ladder logo
 │   ├── Navigation.tsx   # Responsive navigation
-│   ├── ContactForm.tsx  # Supabase contact form
+│   ├── ContactForm.tsx  # Contact form (Web3Forms)
 │   ├── MediaGrid.tsx    # Media gallery
 │   └── Background.tsx   # Experience timeline & education
-├── lib/
-│   └── supabase.ts      # Supabase client
 ├── public/
 │   ├── media.json       # Media items data
 │   └── favicon.svg      # Site favicon

@@ -12,13 +12,6 @@ type Role = {
   links?: Link[]
 }
 
-const stats = [
-  { value: '$3.5B', label: 'NASA flagship mission (Europa Clipper) I helped model and de-risk at JPL' },
-  { value: '>$250M', label: 'in mission savings enabled by my risk-assessment team' },
-  { value: '$8.4M', label: 'in NASA & Space Force non-dilutive funding won with my proposals' },
-  { value: '~15', label: 'engineers led as Director of Engineering at a YC space startup' },
-]
-
 const roles: Role[] = [
   {
     org: 'Sophia Space',
@@ -129,22 +122,12 @@ export default function Background() {
   return (
     <div className="max-w-5xl mx-auto">
       {/* Summary */}
-      <div className="text-center max-w-3xl mx-auto mb-10">
+      <div className="text-center max-w-3xl mx-auto mb-12">
         <p className="text-lg text-gray-700 leading-relaxed">
           Systems engineer and startup builder working at the edge of spacecraft and AI. I spent five
           years on NASA&apos;s Europa Clipper at JPL, led engineering at a YC-backed asteroid-mining
           startup, founded an AI company, and now architect orbital data centers at Sophia Space.
         </p>
-      </div>
-
-      {/* Stats */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-14">
-        {stats.map((s) => (
-          <div key={s.value} className="rounded-lg bg-green-50 border border-green-100 p-5 text-center">
-            <div className="text-3xl font-bold text-[#065f46]">{s.value}</div>
-            <div className="mt-2 text-sm text-gray-600 leading-snug">{s.label}</div>
-          </div>
-        ))}
       </div>
 
       <div className="grid lg:grid-cols-3 gap-10">
