@@ -5,8 +5,7 @@ export const metadata: Metadata = {
   title: "Hayden Burgoyne",
   description: "Asteroid mining and ensuring artificial super-intelligence serves us folks",
   icons: {
-    icon: [{ url: "/logo.svg", type: "image/svg+xml" }, { url: "/favicon.png", type: "image/png" }],
-    apple: "/apple-touch-icon.png",
+    icon: "/favicon.png",
   },
 };
 
