@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { supabase } from '@/lib/supabase'
 import toast from 'react-hot-toast'
 
 export default function ContactForm() {
@@ -11,6 +10,7 @@ export default function ContactForm() {
     message_text: ''
   })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [botcheck, setBotcheck] = useState(false)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -23,17 +23,27 @@ export default function ContactForm() {
     setIsSubmitting(true)
 
     try {
-      // Include the current URL as the source
-      const submissionData = {
-        ...formData,
-        source: window.location.href
-      }
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY
+      if (!accessKey) throw new Error('Contact form is not configured')
 
-      const { error } = await supabase
-        .from('public_contact')
-        .insert([submissionData])
-
-      if (error) throw error
+      // Web3Forms emails each submission straight to my inbox (free tier: 250/month)
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          access_key: accessKey,
+          from_name: 'haydenburgoyne.com',
+          subject: formData.message_subject
+            ? `[haydenburgoyne.com] ${formData.message_subject}`
+            : '[haydenburgoyne.com] New message',
+          email: formData.email,
+          replyto: formData.email,
+          message: formData.message_text,
+          botcheck: botcheck,
+        }),
+      })
+      const result = await res.json()
+      if (!result.success) throw new Error(result.message || 'Submission failed')
 
       toast.success('Message sent successfully!')
       setFormData({
@@ -58,6 +68,17 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="max-w-lg mx-auto space-y-6">
+      {/* Honeypot: hidden from people, bots tend to tick it */}
+      <input
+        type="checkbox"
+        name="botcheck"
+        className="hidden"
+        style={{ display: 'none' }}
+        tabIndex={-1}
+        autoComplete="off"
+        checked={botcheck}
+        onChange={(e) => setBotcheck(e.target.checked)}
+      />
       <div>
         <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
           Email <span className="text-red-500">*</span>
