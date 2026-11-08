@@ -10,7 +10,7 @@ Essentially all of this site was written by Claude Opus 4. I've included the pro
 ## Features
 
 - **Responsive Design**: Works seamlessly on desktop and mobile devices
-- **Curriculum Vitae**: Embedded Notion page showcasing professional experience
+- **Background**: Native experience timeline, highlight stats, and education (`components/Background.tsx`)
 - **Media Gallery**: Dynamic grid displaying media appearances and publications
 - **Contact Form**: Integrated with Supabase for message submissions
 - **Minimalist Theme**: Clean white design with subtle green accents (#065f46)
@@ -79,7 +79,8 @@ homepage/
 │   ├── Logo.tsx         # HB ladder logo
 │   ├── Navigation.tsx   # Responsive navigation
 │   ├── ContactForm.tsx  # Supabase contact form
-│   └── MediaGrid.tsx    # Media gallery
+│   ├── MediaGrid.tsx    # Media gallery
+│   └── Background.tsx   # Experience timeline & education
 ├── lib/
 │   └── supabase.ts      # Supabase client
 ├── public/
@@ -105,7 +106,7 @@ Edit `public/media.json` to add new media items:
 ### Updating Content
 
 - **Hero Tagline**: Edit the h1 in `app/page.tsx`
-- **CV Iframe**: Update the Notion URL in `app/page.tsx`
+- **Background / CV**: Edit the `stats`, `roles`, `education`, and `beyond` arrays in `components/Background.tsx`
 - **Navigation Links**: Modify `components/Navigation.tsx`
 
 ## License

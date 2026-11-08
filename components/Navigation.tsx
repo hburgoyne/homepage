@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 
 const navItems = [
-  { name: 'Curriculum Vitae', href: '#cv' },
+  { name: 'Background', href: '#cv' },
   { name: 'Media', href: '#media' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/hayden-burgoyne/', external: true },
   { name: 'Contact', href: '#contact' },

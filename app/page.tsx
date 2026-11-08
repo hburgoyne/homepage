@@ -5,6 +5,7 @@ import Logo from '@/components/Logo'
 import Navigation from '@/components/Navigation'
 import ContactForm from '@/components/ContactForm'
 import MediaGrid from '@/components/MediaGrid'
+import Background from '@/components/Background'
 import { Github, Linkedin } from 'lucide-react'
 
 export default function Home() {
@@ -48,56 +49,16 @@ export default function Home() {
           </h1>
         </section>
 
-        {/* CV Section */}
-        <section id="cv" className="pt-2 pb-4 px-4 sm:px-6 lg:px-8">
+        {/* Background Section */}
+        <section id="cv" className="py-12 px-4 sm:px-6 lg:px-8 scroll-mt-20">
           <div className="container mx-auto">
-            {/* Mobile Card View */}
-            <div className="block sm:hidden max-w-sm mx-auto">
-              <a 
-                href="https://hburgoyne.notion.site/Curriculum-Vitae-23a126960bbf8064aee5dc25bf924c5b"
-                className="group block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow overflow-hidden"
-              >
-                <div className="relative h-32 bg-gradient-to-br from-green-50 to-green-100">
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg className="w-12 h-12 text-green-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                    </svg>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">Curriculum Vitae</h3>
-                  <p className="text-sm text-gray-600">View my professional experience, education, and accomplishments</p>
-                  <div className="mt-3 flex items-center text-green-700 text-sm font-medium">
-                    <span>Open in Notion</span>
-                    <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
-                    </svg>
-                  </div>
-                </div>
-              </a>
-            </div>
-            
-            {/* Desktop Iframe View */}
-            <div className="hidden sm:block max-w-5xl mx-auto bg-white rounded-lg shadow-sm overflow-hidden">
-              <div className="relative h-[800px] md:h-[800px] overflow-hidden">
-                <div className="absolute inset-0 overflow-auto touch-pan-y">
-                  <iframe 
-                    src="https://hburgoyne.notion.site/ebd/23a126960bbf8064aee5dc25bf924c5b" 
-                    width="100%" 
-                    height="800" 
-                    frameBorder="0" 
-                    allowFullScreen
-                    className="pointer-events-auto"
-                    style={{ minHeight: '800px' }}
-                  />
-                </div>
-              </div>
-            </div>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Background</h2>
+            <Background />
           </div>
         </section>
 
         {/* Media Section */}
-        <section id="media" className="py-16 px-4 sm:px-6 md:px-16 lg:px-32 bg-gray-50">
+        <section id="media" className="scroll-mt-20 py-16 px-4 sm:px-6 md:px-16 lg:px-32 bg-gray-50">
           <div className="container mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Media</h2>
             <MediaGrid />
@@ -105,7 +66,7 @@ export default function Home() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-16 px-6">
+        <section id="contact" className="scroll-mt-20 py-16 px-6">
           <div className="container mx-auto">
             <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Contact</h2>
             <ContactForm />
@@ -118,7 +79,7 @@ export default function Home() {
         <div className="container mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className="text-sm text-gray-400">
-              2025 Hayden Burgoyne. All rights reserved. <br /> This page was built (almost) entirely by Claude.
+              © {new Date().getFullYear()} Hayden Burgoyne. All rights reserved. <br /> This page was built (almost) entirely by Claude.
             </p>
             <div className="flex items-center space-x-6">
               <a
